@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f73f3f;
+      color: #ffffff;
+  }
+  .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 100px;
+      background-color: #9a0707;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form {
+      flex-direction: column;
+  }
+  label {
+      margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="select"],
+  input[type="number"] {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  select,textarea{
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input[type="submit"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border: 100px;
+    cursor: pointer;
+}
+
+h2{
+  color: #8e2525;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="number" id="phoneNumber" name="phoneNumber" required>
+    <br>
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+    </div>
+    <br>
+    <label for="language">Language:</label>
+    <select name="language" id="language">
+        <option value="">Select language</option>
+        <option value="telugu">Telugu</option>
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+    </select>
+    <br>
+    <label for="zipcode">Zipcode:</label>
+    <input type="text" id="zipcode" name="zipcode" required>
+    <br>
+    <label for="about">About:<textarea for="about">Write about yourself...</textarea></label>
+    <br>
+    <br>
+    <input type="submit" value="Register">
+  </form>
+</div>
+</body>
+</html>
